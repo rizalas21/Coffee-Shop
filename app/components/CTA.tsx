@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="pt-14 scroll-mt-10">
+    <section className="pt-10 scroll-mt-10">
       <div className="mx-auto max-w-7xl px-6">
         <div className="relative overflow-hidden rounded-[36px] border border-white/10 bg-[#2E2118] px-8 py-10 text-center text-white shadow-xl">
           {/* Background Blur */}

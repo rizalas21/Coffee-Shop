@@ -1,19 +1,11 @@
 "use client";
-
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
+import { navItems } from "../data/navItems";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
-  const navItems = [
-    ["Tentang", "#about"],
-    ["Menu", "#menu"],
-    ["Gallery", "#gallery"],
-    ["Lokasi", "#location"],
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,8 +36,6 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
 
-  console.log("Active Section:", activeSection);
-
   return (
     <header
       className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 ${
@@ -59,16 +49,25 @@ export default function Navbar() {
 
         <a href="#" className="group">
           <h1
-            className={`font-serif font-semibold transition-all duration-300 ${
-              scrolled ? "text-2xl text-[#2E2118]" : "text-3xl text-white"
+            className={`font-serif font-semibold flex transition-all duration-500 ease-in-out ${
+              scrolled
+                ? "flex-row items-center gap-1 text-2xl text-[#2E2118]"
+                : "flex-col text-3xl text-white"
             }`}
           >
-            Heya
-            <span className="text-amber-700"> Space</span>
+            <span>
+              <span className="text-4xl">H</span>eya
+            </span>
+
+            <span
+              className={`text-amber-700 transition-all duration-500 ${
+                scrolled ? "mr-10" : "ml-7"
+              }`}
+            >
+              <span className="text-4xl">S</span>pace
+            </span>
           </h1>
         </a>
-
-        {/* Navigation */}
 
         <nav
           className={`hidden items-center gap-10 md:flex ${
@@ -93,7 +92,9 @@ export default function Navbar() {
         {/* Button */}
 
         <a
-          href="#location"
+          href="https://maps.app.goo.gl/6QRPBbrVe5AKQJo29"
+          target="_blank"
+          rel="noopener noreferrer"
           className={`flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 ${
             scrolled
               ? "bg-amber-700 text-white hover:bg-amber-800 hover:-translate-y-0.5"

@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Navbar from "./components/Navbar";
-import About from "./components/Abour";
+import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Menu from "./components/Menu";
 import Location from "./components/Location";
@@ -19,6 +19,8 @@ import Cards from "./components/Cards";
 import Reviews from "./components/Reviews";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import FloatingWhatsApp from "./components/FloatWa";
+import FAQ from "./components/FAQ";
 
 export default function Page() {
   return (
@@ -37,11 +39,15 @@ export default function Page() {
 
       <Reviews />
 
+      <FAQ />
+
       <CTA />
 
       <Location />
 
       <Footer />
+
+      <FloatingWhatsApp />
     </main>
   );
 }

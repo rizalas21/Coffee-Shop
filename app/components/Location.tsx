@@ -6,7 +6,7 @@ export default function Location() {
       <div className="mx-auto max-w-7xl px-6">
         {/* Heading */}
 
-        <div className="mb-14 text-center">
+        <div className="mb-4 text-center">
           <div className="mx-auto mb-5 h-1 w-14 rounded-full bg-amber-700" />
 
           <h2 className="font-serif text-5xl text-[#2E2118]">Temukan Kami</h2>

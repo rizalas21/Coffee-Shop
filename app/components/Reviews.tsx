@@ -1,24 +1,7 @@
 import { Star } from "lucide-react";
+import { dataCards } from "../data/reviews";
 
 export default function Reviews() {
-  const dataCards = [
-    {
-      name: "Yudha P. D",
-      review:
-        "Lokasinya strategis di Jatinangor. Tempatnya luas, nyaman, cocok untuk nongkrong maupun mengerjakan tugas.",
-    },
-    {
-      name: "Zakia Aurora",
-      review:
-        "Tempatnya terang, sirkulasi udara bagus, makanan enak, dan sangat nyaman untuk work from cafe.",
-    },
-    {
-      name: "Local Guide",
-      review:
-        "Kopinya enak banget. Pelayanannya ramah dan suasananya bikin betah berlama-lama.",
-    },
-  ];
-
   return (
     <section id="reviews" className="bg-[#FCFAF7] pt-16 scroll-mt-10">
       <div className="mx-auto max-w-7xl px-6">
@@ -38,7 +21,7 @@ export default function Reviews() {
 
           {/* Rating */}
 
-          <div className="mt-8 flex items-center justify-center gap-3">
+          <div className="mt-2 flex items-center justify-center gap-3">
             <div className="flex text-yellow-500">
               {[1, 2, 3, 4, 5].map((i) => (
                 <Star key={i} size={20} fill="currentColor" />
@@ -54,7 +37,7 @@ export default function Reviews() {
 
         {/* Cards */}
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-3">
+        <div className="mt-2 grid gap-8 lg:grid-cols-3">
           {dataCards.map((item) => (
             <div
               key={item.name}
