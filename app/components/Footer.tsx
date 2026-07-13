@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="absolute -left-32 -top-40 h-80 w-80 rounded-full bg-amber-600/10 blur-[120px]" />
       <div className="absolute -bottom-40 -right-32 h-80 w-80 rounded-full bg-orange-500/10 blur-[120px]" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-16">
+      <div className="relative mx-auto max-w-7xl px-6 pt-16 pb-1">
         <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           {/* Brand */}
           <div>
@@ -138,7 +138,7 @@ export default function Footer() {
 
           <p>
             Designed & Developed by{" "}
-            <span className="text-amber-500">Rizal Sudrajat</span>
+            <span className="text-amber-500">sudrajat.dev</span>
           </p>
         </div>
       </div>
