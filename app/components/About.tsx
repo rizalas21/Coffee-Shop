@@ -7,7 +7,7 @@ import "yet-another-react-lightbox/styles.css";
 
 const slides = [
   {
-    src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1600&auto=format&fit=cropcrop&q=80",
+    src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1800&auto=format&fit=cropcrop&q=80",
   },
   {
     src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop",
@@ -32,18 +32,17 @@ export default function About() {
   return (
     <>
       <section id="about" className="mx-auto max-w-7xl px-6 py-16 scroll-mt-10">
-        <div className="grid items-center gap-16 lg:grid-cols-[0.85fr_1.15fr]">
-          {/* LEFT */}
-          <div className="max-w-lg">
+        <div className="grid items-center gap-12 lg:gap-16 grid-cols-1 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="max-w-none lg:max-w-lg">
             <div className="mb-5 h-1 w-14 rounded-full bg-amber-700" />
 
-            <h2 className="mt-8 text-5xl font-serif font-semibold leading-tight text-[#2E2118]">
+            <h2 className="mt-8 text-4xl lg:text-5xl font-serif font-semibold leading-tight text-[#2E2118]">
               Tentang
               <br />
               Heya Space 2.0
             </h2>
 
-            <p className="mt-8 text-[17px] leading-8 text-zinc-600">
+            <p className="mt-6 lg:mt-8 text-[17px] leading-8 text-zinc-600">
               Heya Space 2.0 adalah cafe yang berada di Jatinangor, menyediakan
               tempat nyaman untuk nongkrong, belajar, meeting, hingga work from
               cafe.
@@ -57,15 +56,13 @@ export default function About() {
 
             <a
               href="#menu"
-              className="mt-10 inline-block rounded-xl border border-amber-700 px-8 py-3 text-lg font-medium text-amber-700 transition-all duration-300 hover:-translate-y-1 hover:bg-amber-700 hover:text-white hover:shadow-xl"
+              className="mt-8 lg:mt-10 inline-block rounded-xl border border-amber-700 px-8 py-3 text-lg font-medium text-amber-700 transition-all duration-300 hover:-translate-y-1 hover:bg-amber-700 hover:text-white hover:shadow-xl"
             >
               Jelajahi Menu →
             </a>
           </div>
 
-          {/* RIGHT */}
-          <div className="grid h-[520px] grid-cols-[1.7fr_1fr] gap-4">
-            {/* IMAGE BESAR */}
+          <div className="hidden lg:grid h-[520px] grid-cols-[1.7fr_1fr] gap-4">
             <div
               onClick={() => openLightbox(0)}
               className="group relative cursor-pointer overflow-hidden rounded-3xl shadow-xl"
@@ -74,12 +71,11 @@ export default function About() {
                 src={slides[0].src}
                 alt="Heya Space 2.0"
                 fill
-                sizes="(max-width:768px) 100vw, 50vw"
+                sizes="35vw"
                 className="object-cover transition duration-500 group-hover:scale-105"
               />
             </div>
 
-            {/* KANAN */}
             <div className="flex flex-col gap-4">
               <div
                 onClick={() => openLightbox(1)}
@@ -89,7 +85,7 @@ export default function About() {
                   src={slides[1].src}
                   alt="Heya Space 2.0"
                   fill
-                  sizes="25vw"
+                  sizes="20vw"
                   className="object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
@@ -103,7 +99,7 @@ export default function About() {
                     src={slides[2].src}
                     alt="Heya Space 2.0"
                     fill
-                    sizes="15vw"
+                    sizes="10vw"
                     className="object-cover transition duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -116,12 +112,30 @@ export default function About() {
                     src={slides[3].src}
                     alt="Heya Space 2.0"
                     fill
-                    sizes="15vw"
+                    sizes="10vw"
                     className="object-cover transition duration-500 group-hover:scale-105"
                   />
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="flex lg:hidden w-full gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-none -mx-6 px-6">
+            {slides.map((slide, i) => (
+              <div
+                key={i}
+                onClick={() => openLightbox(i)}
+                className="relative h-64 w-[80%] sm:w-[50%] flex-shrink-0 snap-center cursor-pointer overflow-hidden rounded-3xl shadow-lg"
+              >
+                <Image
+                  src={slide.src}
+                  alt="Heya Space 2.0 Mobile"
+                  fill
+                  sizes="80vw"
+                  className="object-cover"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -52,7 +52,9 @@ export default function FAQ() {
         <div className="mb-6">
           <div className="mb-4 h-1 w-14 rounded-full bg-amber-700"></div>
 
-          <h2 className="font-serif text-5xl text-[#2E2118]">FAQ</h2>
+          <h2 className="font-serif text-4xl md:text-5xl text-[#2E2118]">
+            FAQ
+          </h2>
         </div>
 
         <div className="rounded-3xl border border-zinc-200 bg-white overflow-hidden">
@@ -68,15 +70,15 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => setOpen(active ? null : index)}
-                  className="flex w-full items-center justify-between px-8 py-6 text-left transition hover:bg-zinc-50"
+                  className="flex w-full items-center justify-between px-5 md:px-8 py-5 md:py-6 text-left transition hover:bg-zinc-50 cursor-pointer"
                 >
-                  <h3 className="text-[17px] font-medium text-[#2E2118]">
+                  <h3 className="text-base md:text-[17px] font-medium text-[#2E2118] pr-4 leading-snug">
                     {faq.question}
                   </h3>
 
                   <ChevronDown
                     size={20}
-                    className={`transition duration-300 ${
+                    className={`transition duration-300 shrink-0 ${
                       active ? "rotate-180 text-amber-700" : "text-zinc-400"
                     }`}
                   />
@@ -88,7 +90,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-8 pb-6 leading-8 text-zinc-500">
+                    <p className="px-5 md:px-8 pb-5 md:pb-6 text-sm md:text-base leading-7 md:leading-8 text-zinc-500">
                       {faq.answer}
                     </p>
                   </div>

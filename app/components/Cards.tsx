@@ -1,11 +1,3 @@
-import {
-  faCar,
-  faLaptop,
-  faMugHot,
-  faSeedling,
-  faUtensils,
-  faWifi,
-} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { features } from "../data/featuresItems";
 
@@ -20,6 +12,7 @@ export default function Cards() {
           <FontAwesomeIcon
             icon={Icon}
             className="mb-4 h-10 w-10 text-amber-700"
+            size="2x"
           />
           <h3 className="font-bold">{title}</h3>
           <p className="text-zinc-500 text-center">{description}</p>
