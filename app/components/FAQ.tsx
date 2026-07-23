@@ -19,7 +19,7 @@ const faqs = [
       "Kami menerima QRIS, transfer bank, kartu debit, kartu kredit, maupun pembayaran tunai.",
   },
   {
-    question: "Jam berapa Heya Space 2.0 buka?",
+    question: "Jam berapa Your Coffee Shop buka?",
     answer: "Setiap hari pukul 09.00 – 22.00 WIB.",
   },
   {

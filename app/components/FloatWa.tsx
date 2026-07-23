@@ -10,7 +10,7 @@ export default function FloatingWhatsApp() {
 
   const phone = "6281234567890";
   const message = encodeURIComponent(
-    "Halo Heya Space 2.0, saya ingin bertanya mengenai reservasi.",
+    "Halo Your Coffee Shop, saya ingin bertanya mengenai reservasi.",
   );
 
   return (

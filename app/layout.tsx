@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Heya Space 2.0",
+  title: "Your Coffee Shop",
   description:
-    "Enjoy quality coffee, delicious food, and a cozy atmosphere at Heya Space 2.0.",
+    "Enjoy quality coffee, delicious food, and a cozy atmosphere at Your Coffee Shop.",
 };
 
 export default function RootLayout({

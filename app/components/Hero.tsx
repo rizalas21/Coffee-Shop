@@ -29,8 +29,8 @@ export default function Hero() {
           </h2>
 
           <p className="max-w-sm sm:max-w-md md:max-w-xl text-sm sm:text-base md:text-lg text-zinc-200 leading-relaxed">
-            Nikmati kopi berkualitas, makanan lezat, dan suasana nyaman di Heya
-            Space 2.0.
+            Nikmati kopi berkualitas, makanan lezat, dan suasana nyaman di Your
+            Coffee Shop.
           </p>
 
           <div className="pt-2 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">

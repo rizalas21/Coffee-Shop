@@ -39,13 +39,13 @@ export default function About() {
             <h2 className="mt-8 text-4xl lg:text-5xl font-serif font-semibold leading-tight text-[#2E2118]">
               Tentang
               <br />
-              Heya Space 2.0
+              Your Coffee Shop
             </h2>
 
             <p className="mt-6 lg:mt-8 text-[17px] leading-8 text-zinc-600">
-              Heya Space 2.0 adalah cafe yang berada di Jatinangor, menyediakan
-              tempat nyaman untuk nongkrong, belajar, meeting, hingga work from
-              cafe.
+              Your Coffee Shop adalah cafe yang berada di Jatinangor,
+              menyediakan tempat nyaman untuk nongkrong, belajar, meeting,
+              hingga work from cafe.
             </p>
 
             <p className="mt-5 text-[17px] leading-8 text-zinc-600">
@@ -69,7 +69,7 @@ export default function About() {
             >
               <Image
                 src={slides[0].src}
-                alt="Heya Space 2.0"
+                alt="Your Coffee Shop"
                 fill
                 sizes="35vw"
                 className="object-cover transition duration-500 group-hover:scale-105"
@@ -83,7 +83,7 @@ export default function About() {
               >
                 <Image
                   src={slides[1].src}
-                  alt="Heya Space 2.0"
+                  alt="Your Coffee Shop"
                   fill
                   sizes="20vw"
                   className="object-cover transition duration-500 group-hover:scale-105"
@@ -97,7 +97,7 @@ export default function About() {
                 >
                   <Image
                     src={slides[2].src}
-                    alt="Heya Space 2.0"
+                    alt="Your Coffee Shop"
                     fill
                     sizes="10vw"
                     className="object-cover transition duration-500 group-hover:scale-105"
@@ -110,7 +110,7 @@ export default function About() {
                 >
                   <Image
                     src={slides[3].src}
-                    alt="Heya Space 2.0"
+                    alt="Your Coffee Shop"
                     fill
                     sizes="10vw"
                     className="object-cover transition duration-500 group-hover:scale-105"
@@ -129,7 +129,7 @@ export default function About() {
               >
                 <Image
                   src={slide.src}
-                  alt="Heya Space 2.0 Mobile"
+                  alt="Your Coffee Shop Mobile"
                   fill
                   sizes="80vw"
                   className="object-cover"

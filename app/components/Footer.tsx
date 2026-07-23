@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div className="sm:col-span-2 lg:col-span-1">
             <h2 className="font-serif text-4xl">
-              Heya <span className="text-amber-500">Space</span>
+              Your <span className="text-amber-500">Coffee Shop</span>
             </h2>
 
             <p className="mt-4 max-w-sm text-sm leading-7 text-zinc-400">
@@ -136,7 +136,7 @@ export default function Footer() {
         <div className="my-8 h-px bg-white/10" />
 
         <div className="flex flex-col items-center justify-between gap-4 text-center text-xs text-zinc-500 md:flex-row md:text-sm">
-          <p>© 2026 Heya Space 2.0. All Rights Reserved.</p>
+          <p>© 2026 Your Coffee Shop. All Rights Reserved.</p>
 
           <p>
             Designed & Developed by{" "}

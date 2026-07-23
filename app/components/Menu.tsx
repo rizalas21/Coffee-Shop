@@ -28,7 +28,7 @@ export default function Menu() {
             </h2>
             <p className="mt-3 max-w-xl text-sm md:text-base leading-relaxed text-zinc-500">
               Nikmati pilihan minuman dan hidangan terbaik yang dibuat dengan
-              bahan berkualitas untuk menemani setiap momen di Heya Coffee.
+              bahan berkualitas untuk menemani setiap momen di Your Coffee Shop.
             </p>
 
             <div className="mt-8 flex gap-3 overflow-x-auto pb-2 scrollbar-none -mx-6 px-6 lg:mx-0 lg:px-0">

@@ -55,14 +55,14 @@ export default function Navbar() {
               } ${isOpen ? "!text-[#2E2118]" : ""}`}
             >
               <span>
-                <span className="text-3xl md:text-4xl">H</span>eya
+                <span className="text-3xl md:text-4xl">C</span>offee
               </span>
               <span
                 className={`text-amber-700 transition-all duration-500 ${
                   scrolled ? "ml-1" : "ml-1 md:ml-14"
                 }`}
               >
-                <span className="text-3xl md:text-4xl">S</span>pace
+                <span className="text-3xl md:text-4xl">S</span>hop
               </span>
             </h1>
           </a>

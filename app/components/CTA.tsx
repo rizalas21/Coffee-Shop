@@ -8,7 +8,7 @@ export default function CTA() {
 
           <div className="relative z-10">
             <span className="inline-flex rounded-full border border-white/[0.08] bg-white/[0.04] px-3.5 py-1.5 text-[11px] tracking-wider uppercase text-zinc-300 backdrop-blur">
-              ☕ Heya Space Experience
+              ☕ Your Coffee Shop Experience
             </span>
 
             <h2 className="mx-auto mt-6 max-w-3xl font-serif text-xl sm:text-2xl md:text-3xl font-medium tracking-tight text-white leading-relaxed">

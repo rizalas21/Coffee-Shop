@@ -14,7 +14,7 @@ export default function Reviews() {
 
           <p className="mx-auto mt-5 max-w-2xl text-sm md:text-base leading-7 md:leading-8 text-zinc-500">
             Kepuasan pelanggan menjadi prioritas kami. Berikut beberapa ulasan
-            dari pengunjung Heya Space 2.0.
+            dari pengunjung Your Coffee Shop.
           </p>
 
           <div className="mt-4 flex items-center justify-center gap-3">

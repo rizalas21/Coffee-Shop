@@ -12,7 +12,7 @@ export default function Gallery() {
 
             <p className="mt-4 max-w-xl text-zinc-500 leading-8">
               Nikmati suasana hangat, interior yang nyaman, dan berbagai menu
-              favorit di Heya Space 2.0.
+              favorit di Your Coffee Shop.
             </p>
           </div>
         </div>

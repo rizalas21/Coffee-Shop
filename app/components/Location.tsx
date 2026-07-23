@@ -13,7 +13,7 @@ export default function Location() {
 
           <p className="mx-auto mt-4 max-w-2xl text-sm md:text-lg leading-relaxed md:leading-8 text-zinc-500">
             Berlokasi strategis di Jatinangor dan mudah dijangkau. Datang dan
-            rasakan suasana nyaman Heya Space 2.0.
+            rasakan suasana nyaman Your Coffee Shop.
           </p>
         </div>
 
